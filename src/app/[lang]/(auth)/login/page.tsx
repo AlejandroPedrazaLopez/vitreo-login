@@ -200,7 +200,7 @@ export default function AlternativeLoginPage() {
                       id="remember-me"
                       name="remember-me"
                       type="checkbox"
-                      className="h-4 w-4 rounded border-gray-300 text-[#f1a644] hover:text-[#fdbd00]"
+                      className="h-4 w-4 rounded border-gray-300 text-[#f1a644] hover:text-[#fdbd00]  disabled:text-[#fdbd00]"
                       checked={persist}
                       onChange={(e) => setPersist(e.target.checked)}
                     />
@@ -213,7 +213,7 @@ export default function AlternativeLoginPage() {
                   </div>
                   <button
                     type="button"
-                    className="text-sm font-medium text-[#f1a644] hover:text-[#fdbd00]"
+                    className="text-sm font-medium text-[#f1a644] hover:text-[#fdbd00] disabled:text-[#fdbd00]"
                   >
                     {t("auth.forgot_password")}
                   </button>
@@ -222,7 +222,7 @@ export default function AlternativeLoginPage() {
                 <Button
                   type="submit"
                   variant="primary"
-                  className="w-full bg-[#f1a644] hover:bg-[#fdbd00]"
+                  className="w-full bg-[#f1a644] hover:bg-[#fdbd00] disabled:bg-[#fdbd00] "
                   isLoading={isLoading}
                   loadingText={t("auth.sign_in_loading")}
                 >

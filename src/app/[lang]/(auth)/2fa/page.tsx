@@ -81,7 +81,7 @@ export default function MFASetupPage() {
           </div>
         </div>
 
-        <Card className="bg-white dark:bg-[#0F1629] shadow-xl">
+        <Card className="bg-[#d4d4d4] dark:bg-[#0F1629] shadow-xl">
           <div className="p-8">
             {step === "setup" ? (
               <div className="text-center">
@@ -94,7 +94,7 @@ export default function MFASetupPage() {
                 <Button
                   onClick={setup2FA}
                   variant="primary"
-                  className="w-full"
+                  className="w-full bg-[#f1a644] hover:bg-[#ffde7d] disabled:bg-[#fdbd00]"
                   isLoading={isLoading}
                   loadingText="Configurando..."
                 >
@@ -190,7 +190,7 @@ export default function MFASetupPage() {
                 <Button
                   onClick={finishSetup}
                   variant="primary"
-                  className="w-full"
+                  className="w-full bg-[#f1a644] hover:bg-[#ffde7d] disabled:bg-[#fdbd00]"
                 >
                   {CONFIG.CROSS_DOMAIN_AUTH_ENABLED ? "Continuar a dashboard principal" : "Continuar al dashboard"}
                 </Button>

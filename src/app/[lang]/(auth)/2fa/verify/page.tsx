@@ -112,7 +112,7 @@ export default function MFAVerifyPage() {
           </div>
         </div>
 
-        <Card className="bg-white dark:bg-[#0F1629] shadow-xl">
+        <Card className="bg-[#d4d4d4] dark:bg-[#0F1629] shadow-xl">
           <div className="p-8">
             {!showRecovery ? (
               <>
@@ -150,7 +150,7 @@ export default function MFAVerifyPage() {
                   <Button
                     type="submit"
                     variant="primary"
-                    className="w-full"
+                    className="w-full bg-[#f1a644] hover:bg-[#ffde7d] disabled:bg-[#fdbd00]"
                     isLoading={isLoading}
                     loadingText="Verificando..."
                   >
@@ -160,7 +160,7 @@ export default function MFAVerifyPage() {
                   <div className="text-center">
                     <button
                       type="button"
-                      className="text-sm font-medium text-[#f1a644] hover:text-[#ffde7d]"
+                      className="text-sm font-medium text-[#f1a644] hover:text-[#ffde7d] disabled:text-[#fdbd00]"
                       onClick={() => setShowRecovery(true)}
                     >
                       {t("twoFA.verify.recovery")}
@@ -187,7 +187,7 @@ export default function MFAVerifyPage() {
                         name="recoveryCode"
                         type="text"
                         required
-                        className="text-center font-mono"
+                        className="text-center font-mono text-[#f1a644] hover:text-[#ffde7d] disabled:text-[#fdbd00]"
                         placeholder="Código de recuperación"
                         value={recoveryCode}
                         onChange={(e) =>
@@ -200,7 +200,7 @@ export default function MFAVerifyPage() {
                   <Button
                     type="submit"
                     variant="primary"
-                    className="w-full"
+                    className="w-full bg-[#f1a644] hover:bg-[#ffde7d] disabled:bg-[#fdbd00]"
                     isLoading={isLoading}
                     loadingText="Verificando..."
                   >
@@ -210,7 +210,7 @@ export default function MFAVerifyPage() {
                   <div className="text-center">
                     <button
                       type="button"
-                      className="text-sm font-medium text-[#f1a644] hover:text-[#ffde7d]"
+                      className="text-sm font-medium text-[#f1a644] hover:text-[#ffde7d] disabled:text-[#fdbd00]"
                       onClick={() => setShowRecovery(false)}
                     >
                       {t("twoFA.verify.back")}
