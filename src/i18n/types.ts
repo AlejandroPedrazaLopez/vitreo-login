@@ -1,5 +1,4 @@
-import { sidebar as enSidebar } from "./locales/en/sidebar";
-import { sidebar as esSidebar } from "./locales/es/sidebar";
+
 
 export interface CommonTranslations {
   // General actions
@@ -48,8 +47,6 @@ export interface CommonTranslations {
   navigation_process_document: string;
 }
 
-export type SidebarTranslations = typeof enSidebar | typeof esSidebar;
-
 export interface AuthTranslations {
   welcome: string;
   enter_credentials: string;
@@ -95,7 +92,6 @@ export interface TwoFATranslations {
 
 export interface TranslationKeys {
   common: CommonTranslations;
-  sidebar: SidebarTranslations;
   auth: AuthTranslations;
   twoFA: TwoFATranslations;
   // Aquí puedes agregar más namespaces como:
