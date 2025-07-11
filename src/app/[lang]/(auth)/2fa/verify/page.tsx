@@ -100,7 +100,7 @@ export default function MFAVerifyPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-500 from-blue-50 to-purple-50 dark:from-[#090E1A] dark:to-[#121A31] p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#2e2D2c] p-4">
       <div className="w-full max-w-md">
         <div className="flex justify-center mb-8">
           <div className="">
@@ -123,11 +123,6 @@ export default function MFAVerifyPage() {
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                     {t("twoFA.verify.description")}
                   </p>
-                  {redirectUrl && (
-                    <p className="text-sm text-blue-600 dark:text-blue-400 mt-2">
-                      Redirecting after verification...
-                    </p>
-                  )}
                 </div>
 
                 <form onSubmit={verifyCode} className="space-y-6">
@@ -165,7 +160,7 @@ export default function MFAVerifyPage() {
                   <div className="text-center">
                     <button
                       type="button"
-                      className="text-sm font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
+                      className="text-sm font-medium text-[#f1a644] hover:text-[#ffde7d]"
                       onClick={() => setShowRecovery(true)}
                     >
                       {t("twoFA.verify.recovery")}
@@ -215,7 +210,7 @@ export default function MFAVerifyPage() {
                   <div className="text-center">
                     <button
                       type="button"
-                      className="text-sm font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
+                      className="text-sm font-medium text-[#f1a644] hover:text-[#ffde7d]"
                       onClick={() => setShowRecovery(false)}
                     >
                       {t("twoFA.verify.back")}

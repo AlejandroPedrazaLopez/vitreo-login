@@ -115,7 +115,7 @@ export default function AlternativeLoginPage() {
   };
 
   return (
-    <div className="bg-gray-500 min-h-dvh from-blue-50 to-purple-50 dark:from-[#090E1A] dark:to-[#121A31]">
+    <div className="bg-[#2e2D2c] min-h-dvh">
       <div className="min-h-[calc(100vh-80px)] flex flex-col items-center justify-center">
         <div className="w-full max-w-md">
           <div className="flex justify-center mb-8">
@@ -128,17 +128,14 @@ export default function AlternativeLoginPage() {
             </div>
           </div>
 
-          <Card className="bg-white dark:bg-[#0F1629] shadow-xl">
+          <Card className="bg-[#d4d4d4] dark:bg-[#0F1629] shadow-xl">
             <div className="p-8">
               <div className="text-center mb-8">
                 <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-50">
-                  {t("auth.welcome")} - {getCurrentDomainName()}
+                  {t("auth.welcome")}
                 </h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                   {t("auth.enter_credentials")}
-                </p>
-                <p className="text-xs text-blue-600 dark:text-blue-400 mt-2">
-                  Redirecting to {CONFIG.MAIN_DOMAIN} after login
                 </p>
               </div>
 
@@ -203,7 +200,7 @@ export default function AlternativeLoginPage() {
                       id="remember-me"
                       name="remember-me"
                       type="checkbox"
-                      className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700"
+                      className="h-4 w-4 rounded border-gray-300 text-[#f1a644] hover:text-[#fdbd00]"
                       checked={persist}
                       onChange={(e) => setPersist(e.target.checked)}
                     />
@@ -216,7 +213,7 @@ export default function AlternativeLoginPage() {
                   </div>
                   <button
                     type="button"
-                    className="text-sm font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
+                    className="text-sm font-medium text-[#f1a644] hover:text-[#fdbd00]"
                   >
                     {t("auth.forgot_password")}
                   </button>
@@ -225,7 +222,7 @@ export default function AlternativeLoginPage() {
                 <Button
                   type="submit"
                   variant="primary"
-                  className="w-full"
+                  className="w-full bg-[#f1a644] hover:bg-[#fdbd00]"
                   isLoading={isLoading}
                   loadingText={t("auth.sign_in_loading")}
                 >

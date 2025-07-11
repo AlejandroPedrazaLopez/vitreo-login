@@ -69,7 +69,7 @@ export default function MFASetupPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 dark:from-[#090E1A] dark:to-[#121A31] p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#2e2D2c] p-4">
       <div className="w-full max-w-md">
         <div className="flex justify-center mb-8">
           <div className="">
@@ -91,11 +91,6 @@ export default function MFASetupPage() {
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
                   La autenticación de dos factores agrega una capa adicional de seguridad a tu cuenta
                 </p>
-                {CONFIG.CROSS_DOMAIN_AUTH_ENABLED && (
-                  <p className="text-xs text-blue-600 dark:text-blue-400 mb-6">
-                    Configurando desde {getCurrentDomainName()} - Redirigirá a {CONFIG.MAIN_DOMAIN}
-                  </p>
-                )}
                 <Button
                   onClick={setup2FA}
                   variant="primary"
@@ -191,14 +186,6 @@ export default function MFASetupPage() {
                     ))}
                   </div>
                 </div>
-                
-                {CONFIG.CROSS_DOMAIN_AUTH_ENABLED && (
-                  <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded mb-6">
-                    <p className="text-sm text-blue-800 dark:text-blue-200 text-center">
-                      🔄 Redirigiendo a {CONFIG.MAIN_DOMAIN} después de completar la configuración
-                    </p>
-                  </div>
-                )}
                 
                 <Button
                   onClick={finishSetup}

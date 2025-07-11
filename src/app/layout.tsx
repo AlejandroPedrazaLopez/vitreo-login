@@ -1,23 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
 import { Providers } from "@/src/providers/Providers";
 
 import "./globals.css";
-import "@aws-amplify/ui-react/styles.css";
 
-import puy_logo from "../../public/images/puy_logo.png";
-import { Amplify } from "aws-amplify";
-import outputs from "@/amplify_outputs.json";
+import puy_logo from "../../public/images/Logo-Blanco-Amarillo.png";
 import { GeistSans } from "geist/font/sans";
 
-Amplify.configure(outputs);
-
 const siteConfig = {
-  title: "PUY",
+  title: "Vítreo",
   description:
-    "Explora el universo de la tokenización y sumérgete en la vanguardia de la economía digital.",
-  url: "https://www.puygroup.com",
+    "Vítreo capital.",
+  url: "https://www.vitreo.com",
 };
 
 export const metadata: Metadata = {
