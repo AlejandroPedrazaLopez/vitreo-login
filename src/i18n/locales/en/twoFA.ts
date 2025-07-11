@@ -14,6 +14,7 @@ export const twoFA = {
     verify: "Verify and activate",
     error: "Invalid code. Please try again",
     recovery: "Don't have your authentication app? Use the recovery codes",
+    back: "Go back"
   },
   recovery: {
     title: "Recovery Codes",
