@@ -1,0 +1,163 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Next.js
+.next/
+out/
+build/
+dist/
+.swc/
+
+# Environment Variables
+.env
+.env*.local
+.env.development
+.env.test
+.env.production
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+*.pem
+Thumbs.db
+
+# PWA / Service Workers
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
+# Optional
+.eslintcache
+.stylelintcache
+.cache/
+
+# AWS Amplify
+aws-exports.js
+aws-exports.ts
+awsconfiguration.json
+amplifyconfiguration.json
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+.amplify/
+.amplify-nodejs/
+amplify/.config/local-*
+amplify/backend/amplify-meta.json
+amplify/backend/awscloudformation/
+amplify/backend/function/*/dist/
+amplify/backend/function/*/src/node_modules/
+amplify/backend/api/*/build/
+amplify/backend/hosting/*/build/
+amplify/team-provider-info.json
+amplify/#current-cloud-backend
+amplify/mock-data
+amplify/mock-api-resources
+amplify/logs
+
+amplify_outputs.json
+
+# Node.js specific files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.npm/
+.yarn/
+.pnp.*
+
+# Build outputs and distribution files
+/dist/
+/build/
+/out/
+/.next/
+/coverage/
+/.nyc_output/
+*.min.js
+*.min.css
+/public/dist/
+
+# Environment and local config files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.local.json
+config.local.js
+
+# IDE and editor files
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# OS specific files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# Optional eslint cache
+.eslintcache
+
+# Cache
+.cache/
+.parcel-cache/
+
